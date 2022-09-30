@@ -40,19 +40,23 @@ const ResumeControl = ({
     if (resumeName.length > 2) {
       if (await checkResumeNameExists(resumeName)) {
         if (picture) {
-          toast.promise(
-            saveResumeDetails(
-              user.username,
-              resumeName,
-              resumeDetails,
-              picture
-            ),
-            {
-              loading: "Saving Resume...",
-              success: <b>Resume Saved!</b>,
-              error: <b>Could not save.</b>,
-            }
-          );
+          toast
+            .promise(
+              saveResumeDetails(
+                user.username,
+                resumeName,
+                resumeDetails,
+                picture
+              ),
+              {
+                loading: "Saving Resume...",
+                success: <b>Resume Saved!</b>,
+                error: <b>Could not save.</b>,
+              }
+            )
+            .then(() => {
+              navigate("/dashboard");
+            });
         } else {
           toast("Upload Image");
         }
@@ -73,7 +77,7 @@ const ResumeControl = ({
           error: <b>Could not updated.</b>,
         })
         .then(() => {
-          navigate("/");
+          navigate("/dashboard");
         });
     } else {
       toast("Upload image");

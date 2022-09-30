@@ -14,7 +14,7 @@ const ResumeCard = ({ resumeInfo }) => {
 
   const deleteResume = (resumeId) => {
     deleteResumeInfo(resumeId);
-    navigate("/");
+    navigate("/dashboard");
   };
 
   return (
