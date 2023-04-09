@@ -35,11 +35,11 @@ const Navbar = () => {
           <Link to="/dashboard">
             <li className="text-gray cursor-pointer">Dashboard</li>
           </Link>
-          {/* <li className="text-gray">
+          <li className="text-gray">
             <button className="w-44 h-8 rounded-sm text-white bg-blue-500 hover:bg-blue-600 transition-all">
               Sign in
             </button>
-          </li> */}
+          </li>
           <li>
             <button
               onClick={async () => {

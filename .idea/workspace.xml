@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7eb01c91-641e-4410-bda6-076bc22a3258" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditResume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditResume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Achievements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Achievements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Experiences.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experiences.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormHanlder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormHanlder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProtectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProtectedRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResumeCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResumeCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResumeControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResumeControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Template1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Template1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/appContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/appContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NUgI6T6ED9nCbWksl3vBKXHvGm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/nimalan-pt6454/Desktop/rezoom/rezoom",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="node" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/../../rz-backend/server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7eb01c91-641e-4410-bda6-076bc22a3258" name="Changes" comment="" />
+      <created>1679723991859</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679723991859</updated>
+      <workItem from="1679723994621" duration="180000" />
+      <workItem from="1679724203179" duration="34000" />
+      <workItem from="1679724292468" duration="22935000" />
+      <workItem from="1679844718790" duration="2487000" />
+      <workItem from="1680253800987" duration="108000" />
+      <workItem from="1680360838138" duration="1223000" />
+      <workItem from="1640995577546" duration="62000" />
+      <workItem from="1680416907505" duration="75000" />
+      <workItem from="1680944207362" duration="1025000" />
+      <workItem from="1680945289179" duration="51000" />
+      <workItem from="1680945356955" duration="6874000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../rz-backend/functions/edit.js</url>
+          <line>136</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

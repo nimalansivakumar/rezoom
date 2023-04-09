@@ -10,14 +10,14 @@ const FormHanlder = ({
     if (fieldName === "experiences") {
       setResumeDetails({
         ...resumeDetails,
-        experience: [
-          ...resumeDetails.experience,
+        experiences: [
+          ...resumeDetails.experiences,
           {
-            id: resumeDetails.experience.length + 1,
-            companyName: "",
+            id: resumeDetails.experiences.length + 1,
+            company_name: "",
             role: "",
             duration: "",
-            jobExperience: "",
+            description: "",
           },
         ],
       });
@@ -28,7 +28,7 @@ const FormHanlder = ({
           ...resumeDetails.education,
           {
             id: resumeDetails.education.length + 1,
-            institutionName: "",
+            school_name: "",
             major: "",
             duration: "",
           },
@@ -41,31 +41,31 @@ const FormHanlder = ({
           ...resumeDetails.projects,
           {
             id: resumeDetails.projects.length + 1,
-            projectName: "",
-            desc: "",
-            link: "",
+            project_name: "",
+            description: "",
+            url: "",
           },
         ],
       });
-    } else if (fieldName === "achievement") {
+    } else if (fieldName === "achievements") {
       setResumeDetails({
         ...resumeDetails,
-        achievement: [
-          ...resumeDetails.achievement,
+        achievements: [
+          ...resumeDetails.achievements,
           {
-            id: resumeDetails.achievement.length + 1,
-            achievement: "",
+            id: resumeDetails.achievements.length + 1,
+            achievement_name: "",
           },
         ],
       });
     } else if (fieldName === "languages-known") {
       setResumeDetails({
         ...resumeDetails,
-        languages_known: [
-          ...resumeDetails.languages_known,
+        languages: [
+          ...resumeDetails.languages,
           {
-            id: resumeDetails.languages_known.length + 1,
-            languages_known: "",
+            id: resumeDetails.languages.length + 1,
+            lang_name: "",
           },
         ],
       });
@@ -74,10 +74,10 @@ const FormHanlder = ({
 
   const removeComponents = (fieldName) => {
     if (fieldName === "experiences") {
-      resumeDetails.experience.pop();
+      resumeDetails.experiences.pop();
       setResumeDetails({
         ...resumeDetails,
-        experience: [...resumeDetails.experience],
+        experiences: [...resumeDetails.experiences],
       });
     } else if (fieldName === "education") {
       resumeDetails.education.pop();
@@ -91,17 +91,17 @@ const FormHanlder = ({
         ...resumeDetails,
         projects: [...resumeDetails.projects],
       });
-    } else if (fieldName === "achievement") {
-      resumeDetails.achievement.pop();
+    } else if (fieldName === "achievements") {
+      resumeDetails.achievements.pop();
       setResumeDetails({
         ...resumeDetails,
-        achievement: [...resumeDetails.achievement],
+        achievements: [...resumeDetails.achievements],
       });
     } else if (fieldName === "languages-known") {
-      resumeDetails.languages_known.pop();
+      resumeDetails.languages.pop();
       setResumeDetails({
         ...resumeDetails,
-        languages_known: [...resumeDetails.languages_known],
+        languages: [...resumeDetails.languages],
       });
     }
   };
@@ -122,17 +122,17 @@ const FormHanlder = ({
         ...resumeDetails,
         interests: resumeDetails.interests,
       });
-    } else if (type === "achievement") {
-      resumeDetails.achievement.splice(index, 1);
+    } else if (type === "achievements") {
+      resumeDetails.achievements.splice(index, 1);
       setResumeDetails({
         ...resumeDetails,
-        achievement: resumeDetails.achievement,
+        achievements: resumeDetails.achievements,
       });
     } else if (type === "languages-known") {
-      resumeDetails.languages_known.splice(index, 1);
+      resumeDetails.languages.splice(index, 1);
       setResumeDetails({
         ...resumeDetails,
-        languages_known: resumeDetails.languages_known,
+        languages: resumeDetails.languages,
       });
     }
   };
