@@ -5,15 +5,15 @@ const Achievements = ({
   index,
 }) => {
   const handleChange = (e, index, inputField) => {
-    let arrayCopy = resumeDetails.achievement;
+    let arrayCopy = resumeDetails.achievements;
 
     if (inputField === "achievement") {
-      arrayCopy[index - 1].achievement = e.target.value;
+      arrayCopy[index - 1].achievements = e.target.value;
     }
 
     setResumeDetails({
       ...resumeDetails,
-      achievement: arrayCopy,
+      achievements: arrayCopy,
     });
   };
   return (
@@ -22,7 +22,7 @@ const Achievements = ({
         type="text"
         className={`${InputFieldStyle} my-2`}
         placeholder="Achievement"
-        value={resumeDetails.achievement[index - 1].achievement}
+        value={resumeDetails.achievements[index - 1].achievement_name}
         onChange={(e) => {
           handleChange(e, index, "achievement");
         }}

@@ -6,16 +6,12 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
     <div
       className={`w-full h-auto ${resumeFont}  flex items-center justify-center bg-slate-300`}
     >
-      <div
-        className="w-rw h-rh my-10 bg-white font-man"
-        id="resume"
-        ref={reference}
-      >
+      <div className="w-rw h-rh my-10 bg-white font-man" id="resume_component">
         <div className="w-full h-1/5 flex flex-row">
           <div className="w-8/12 h-full flex flex-col justify-center items-center">
             <div className="w-5/6 my-5">
               <h1 className="text-2xl font-bold">{resumeDetails.name}</h1>
-              <p className="text-lg">{resumeDetails.role}</p>
+              <p className="text-lg">{resumeDetails.job_role}</p>
             </div>
             <div
               style={{ gridTemplateColumns: "60% 40%" }}
@@ -62,15 +58,15 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
               <h1 className="text-slate-400 tracking-widest border-b-2 font-bold">
                 EXPERIENCE
               </h1>
-              {resumeDetails.experience.map((exp) => (
+              {resumeDetails.experiences.map((exp) => (
                 <div
                   className="w-full my-2 flex flex-col justify-around"
                   key={exp.id}
                 >
                   <h1 className="text-md font-semibold">{exp.role}</h1>
-                  <p className="text-sm">{exp.companyName}</p>
+                  <p className="text-sm">{exp.company_name}</p>
                   <p className="text-xs">{exp.duration}</p>
-                  <p className="text-sm my-1">{exp.jobExperience}</p>
+                  <p className="text-sm my-1">{exp.description}</p>
                 </div>
               ))}
             </div>
@@ -81,12 +77,12 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
               {resumeDetails.projects.map((project) => (
                 <div className="w-full my-2" key={project.id}>
                   <h1 className="text-md font-semibold">
-                    {project.projectName}
+                    {project.project_name}
                   </h1>
-                  <a href={`${project.link}`} target="_blank" rel="noreferrer">
-                    <p className="text-sm">{project.link}</p>
+                  <a href={`${project.url}`} target="_blank" rel="noreferrer">
+                    <p className="text-sm">{project.url}</p>
                   </a>
-                  <p className="text-sm my-1">{project.desc}</p>
+                  <p className="text-sm my-1">{project.description}</p>
                 </div>
               ))}
             </div>
@@ -98,11 +94,11 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
               {resumeDetails.education.map((edu) => (
                 <div className="w-full my-2" key={edu.id}>
                   <h1 className="text-md font-semibold">
-                    {edu.institutionName}
+                    {edu.school_name}
                   </h1>
                   <div className="w-full h-auto flex flex-row justify-between">
                     <p className="text-sm">{edu.major}</p>
-                    <p className="text-sm">{edu.duration}</p>
+                    <p className="text-sm">{edu.year}</p>
                   </div>
                 </div>
               ))}
@@ -114,7 +110,7 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
                 ABOUT ME
               </h1>
               <div className="w-full my-2">
-                <p className="text-sm">{resumeDetails.about_me}</p>
+                <p className="text-sm">{resumeDetails.summary}</p>
               </div>
             </div>
             <div className="w-5/6 h-auto mb-7">
@@ -122,9 +118,9 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
                 SKILLS
               </h1>
               <div className="w-full my-2">
-                {resumeDetails.skills.map((skill, key) => (
-                  <p className="text-sm" key={key}>
-                    {skill}
+                {resumeDetails.skills.map((skill) => (
+                  <p className="text-sm" key={skill.id}>
+                    {skill.skill_name}
                   </p>
                 ))}
               </div>
@@ -134,9 +130,9 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
                 INTERESTS
               </h1>
               <div className="w-full my-2">
-                {resumeDetails.interests.map((interest, key) => (
-                  <p className="text-sm" key={key}>
-                    {interest}
+                {resumeDetails.interests.map((interest) => (
+                  <p className="text-sm" key={interest.id}>
+                    {interest.interest_name}
                   </p>
                 ))}
               </div>
@@ -146,9 +142,9 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
                 ACHIEVEMENTS
               </h1>
               <ul className="w-full my-2">
-                {resumeDetails.achievement.map((ach, key) => (
-                  <li className="text-sm mb-2" key={key}>
-                    {ach.achievement}
+                {resumeDetails.achievements.map((ach) => (
+                  <li className="text-sm mb-2" key={ach.id}>
+                    {ach.achievement_name}
                   </li>
                 ))}
               </ul>
@@ -158,9 +154,9 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
                 LANGUAGES KNOWN
               </h1>
               <ul className="w-full my-2">
-                {resumeDetails.languages_known.map((lang, key) => (
-                  <li className="text-sm mb-2" key={key}>
-                    {lang}
+                {resumeDetails.languages.map((lang) => (
+                  <li className="text-sm mb-2" key={lang.id}>
+                    {lang.lang_name}
                   </li>
                 ))}
               </ul>
