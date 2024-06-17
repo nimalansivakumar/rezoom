@@ -96,16 +96,20 @@ const requests = {
         return axiosRequest(requestObject);
     },
 
-    // getResumeData: (user_id) => {
-    //     let requestObject = {
-    //         url: "/edit/update",
-    //         method: "GET",
-    //         data: {
-    //             user_id: user_id,
-    //         },
-    //     };
-    //     return axiosRequest(requestObject);
-    // },
+    updateResume: (user_id, resume_id, resumeName, resumeDetails) => {
+        let requestObject = {
+            url: "/edit/update-resume",
+            method: "POST",
+            data: {
+                user_id: user_id,
+                resume_id : resume_id,
+                resume_name: resumeName,
+                resume_data: JSON.stringify(resumeDetails),
+                created_time: new Date().toISOString().split("T")[0],
+            },
+        };
+        return axiosRequest(requestObject);
+    },
 
     deleteResume: (user_id, resume_id) => {
         let requestObject = {

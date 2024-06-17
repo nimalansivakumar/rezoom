@@ -7,6 +7,7 @@ import Home from "./Home";
 import {AppProvider} from "./context/appContext";
 import SignIn from "./SignIn";
 import ProtectedRoute from "./components/ProtectedRoute";
+import ViewResume from "./ViewResume";
 
 function App() {
     return (
@@ -39,6 +40,14 @@ function App() {
                         element={
                             <ProtectedRoute>
                                 <EditResume/>
+                            </ProtectedRoute>
+                        }
+                    />
+                    <Route
+                        path={`/edit/:user_id/view/:resume_id`}
+                        element={
+                            <ProtectedRoute>
+                                <ViewResume/>
                             </ProtectedRoute>
                         }
                     />

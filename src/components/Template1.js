@@ -19,7 +19,7 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
             >
               <p className="">📧 {resumeDetails.email}</p>
               <p className="">📲 {resumeDetails.mobile}</p>
-              <p>📌 {resumeDetails.address}</p>
+              <p>📌 {resumeDetails.location}</p>
               <a
                 href={
                   resumeDetails.website.includes("https://")
@@ -35,9 +35,9 @@ const Template1 = ({ resumeDetails, reference, resumeFont }) => {
           </div>
           <div className="w-4/12 h-full flex items-center justify-center">
             <div className="w-28 h-28">
-              {resumeDetails.image_link ? (
+              {resumeDetails.image_url? (
                 <img
-                  src={resumeDetails.image_link}
+                  src={resumeDetails.image_url}
                   alt="#"
                   rel="noreferrer"
                   className="rounded-full"

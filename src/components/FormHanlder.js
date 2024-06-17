@@ -16,7 +16,7 @@ const FormHanlder = ({
             id: resumeDetails.experiences.length + 1,
             company_name: "",
             role: "",
-            duration: "",
+            year: "",
             description: "",
           },
         ],
@@ -30,7 +30,8 @@ const FormHanlder = ({
             id: resumeDetails.education.length + 1,
             school_name: "",
             major: "",
-            duration: "",
+            year: "",
+            location: "",
           },
         ],
       });
@@ -47,7 +48,7 @@ const FormHanlder = ({
           },
         ],
       });
-    } else if (fieldName === "achievements") {
+    } else if (fieldName === "achievement") {
       setResumeDetails({
         ...resumeDetails,
         achievements: [
@@ -55,17 +56,6 @@ const FormHanlder = ({
           {
             id: resumeDetails.achievements.length + 1,
             achievement_name: "",
-          },
-        ],
-      });
-    } else if (fieldName === "languages-known") {
-      setResumeDetails({
-        ...resumeDetails,
-        languages: [
-          ...resumeDetails.languages,
-          {
-            id: resumeDetails.languages.length + 1,
-            lang_name: "",
           },
         ],
       });
@@ -91,17 +81,11 @@ const FormHanlder = ({
         ...resumeDetails,
         projects: [...resumeDetails.projects],
       });
-    } else if (fieldName === "achievements") {
+    } else if (fieldName === "achievement") {
       resumeDetails.achievements.pop();
       setResumeDetails({
         ...resumeDetails,
         achievements: [...resumeDetails.achievements],
-      });
-    } else if (fieldName === "languages-known") {
-      resumeDetails.languages.pop();
-      setResumeDetails({
-        ...resumeDetails,
-        languages: [...resumeDetails.languages],
       });
     }
   };
